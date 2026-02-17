@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="60" viewBox="0 0 300 60">
+  <style>
+    .logo-text { font-family: Arial, sans-serif; font-weight: bold; }
+    .yellow { fill: #FFBE0B; }
+    .dark { fill: #333333; }
+  </style>
+  <text x="10" y="45" class="logo-text yellow">Kode</text>
+  <text x="120" y="45" class="logo-text yellow">Y</text>
+  <text x="145" y="45" class="logo-text dark">oga</text>
+</svg>

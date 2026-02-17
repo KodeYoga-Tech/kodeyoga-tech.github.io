@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KodeYoga</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#home">
+                    <img src="images/logo.png" alt="KodeYoga Logo" class="logo-image">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Floating Navigation Buttons -->
+    <div class="floating-nav">
+        <button id="scroll-to-top" title="Scroll to Top"><i class="fas fa-arrow-up"></i></button>
+        <button id="scroll-to-bottom" title="Scroll to Bottom"><i class="fas fa-arrow-down"></i></button>
+    </div>
+
+    <!-- HOME SECTION -->
+    <section id="home" class="hero" style="background-image: url('images/hero-bg.svg'); background-size: cover; background-position: center;">
+        <div class="container">
+            <div class="hero-content animate-fade-in">
+                <h1>Transform Your Digital Vision Into Reality</h1>
+                <p>KodeYoga combines technical expertise with cutting-edge technology and AI-enabled delivery to create principled, exceptional software solutions.</p>
+                <div class="cta-buttons">
+                    <a href="#services" class="btn btn-primary">Our Services</a>
+                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLOGAN SECTION -->
+    <section id="slogan" class="slogan-section">
+        <div class="container">
+            <h2 class="slogan-text">Your dedicated partner in transformative growth, innovation, and continuous learning.</h2>
+        </div>
+    </section>
+
+    <!-- SERVICES OVERVIEW SECTION -->
+    <section id="services-overview" class="services">
+        <div class="container">
+            <div class="section-header animate-scale-in">
+                <h2>Our Services</h2>
+                <p>Comprehensive software solutions tailored to your business needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-service="application">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Application Development</h3>
+                    <p>Custom software solutions designed to meet your specific business requirements and enhance operational efficiency.</p>
+                    <button class="read-more-btn">Read More</button>
+                </div>
+                <div class="service-card" data-service="data">
+                    <div class="service-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Data Engineering</h3>
+                    <p>Robust data pipelines, warehousing solutions, and analytics platforms to transform your data into actionable insights.</p>
+                    <button class="read-more-btn">Read More</button>
+                </div>
+                <div class="service-card" data-service="devops">
+                    <div class="service-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>DevOps</h3>
+                    <p>Streamlined development operations with automated workflows, continuous integration, and deployment strategies.</p>
+                    <button class="read-more-btn">Read More</button>
+                </div>
+                <div class="service-card" data-service="ai">
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI-Enabled Delivery</h3>
+                    <p>Cutting-edge artificial intelligence and machine learning solutions to drive innovation and competitive advantage.</p>
+                    <button class="read-more-btn">Read More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VALUES SECTION -->
+    <section id="values" class="values">
+        <div class="container">
+            <div class="section-header animate-scale-in">
+                <h2>Our Core Values</h2>
+                <p>The principles that guide our work and relationships</p>
+            </div>
+            <div class="values-grid">
+                <div class="value-card" data-value="transparency">
+                    <div class="value-icon">
+                        <i class="fas fa-glasses"></i>
+                    </div>
+                    <h3>Transparency</h3>
+                    <p>We believe in open communication and visibility throughout the development process, ensuring you're always informed.</p>
+                    <button class="read-more-btn">Read More</button>
+                </div>
+                <div class="value-card" data-value="partnership">
+                    <div class="value-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Partnership</h3>
+                    <p>We work as an extension of your team, aligning our goals with yours to achieve mutual success.</p>
+                    <button class="read-more-btn">Read More</button>
+                </div>
+                <div class="value-card" data-value="growth">
+                    <div class="value-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Combined Growth</h3>
+                    <p>We're committed to growing alongside our clients, continuously improving and evolving together.</p>
+                    <button class="read-more-btn">Read More</button>
+                </div>
+            </div>
+            
+            <!-- Value Details Modal -->
+            <div id="valueModal" class="modal">
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <div id="modal-transparency" class="modal-details">
+                        <h2>Transparency in Action</h2>
+                        <p>We believe that open communication is the foundation of successful partnerships. At KodeYoga, we maintain complete transparency throughout the development process, from initial planning to final delivery.</p>
+                        <ul>
+                            <li>Regular progress updates and honest assessments</li>
+                            <li>Clear explanations of technical concepts</li>
+                            <li>Visibility into our development process</li>
+                            <li>Open discussions about challenges and solutions</li>
+                        </ul>
+                    </div>
+                    <div id="modal-partnership" class="modal-details">
+                        <h2>Partnership Philosophy</h2>
+                        <p>We don't see ourselves as just vendors or service providers—we're your partners in digital transformation. We take the time to understand your business objectives, challenges, and vision, aligning our technical solutions with your strategic goals.</p>
+                        <ul>
+                            <li>Deep understanding of your business goals</li>
+                            <li>Collaborative approach to problem-solving</li>
+                            <li>Long-term relationships based on trust</li>
+                            <li>Shared commitment to project success</li>
+                        </ul>
+                    </div>
+                    <div id="modal-growth" class="modal-details">
+                        <h2>Growing Together</h2>
+                        <p>We believe that true success comes from growing together. We're committed to not just delivering solutions, but also to sharing knowledge, building capabilities, and fostering a culture of continuous learning.</p>
+                        <ul>
+                            <li>Knowledge sharing and capability building</li>
+                            <li>Continuous learning and improvement</li>
+                            <li>Staying at the forefront of technology</li>
+                            <li>Evolving our practices based on feedback</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Service Details Modal -->
+    <div id="serviceModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-application" class="modal-details">
+                <h2>Application Development</h2>
+                <p>Our application development services are designed to transform your business requirements into powerful, scalable, and user-friendly software solutions. We specialize in creating custom applications that streamline operations, enhance user experiences, and drive business growth.</p>
+                <h3>What We Offer:</h3>
+                <ul>
+                    <li>Custom web application development</li>
+                    <li>Mobile application development (iOS and Android)</li>
+                    <li>Progressive Web Apps (PWAs)</li>
+                    <li>Enterprise software solutions</li>
+                    <li>Legacy system modernization</li>
+                    <li>API development and integration</li>
+                </ul>
+                <h3>Our Approach:</h3>
+                <p>We follow a collaborative, iterative development process that ensures your application meets both current needs and future scalability requirements. Our team of experienced developers works closely with you from concept to deployment, ensuring transparency and alignment throughout the project lifecycle.</p>
+            </div>
+            <div id="modal-data" class="modal-details">
+                <h2>Data Engineering</h2>
+                <p>Our data engineering services help organizations harness the power of their data through robust architecture, efficient pipelines, and advanced analytics capabilities. We transform raw data into valuable insights that drive informed decision-making and business intelligence.</p>
+                <h3>What We Offer:</h3>
+                <ul>
+                    <li>Data pipeline design and implementation</li>
+                    <li>Data warehouse and lake solutions</li>
+                    <li>ETL/ELT process development</li>
+                    <li>Real-time data processing systems</li>
+                    <li>Data quality and governance frameworks</li>
+                    <li>Business intelligence and reporting solutions</li>
+                </ul>
+                <h3>Our Approach:</h3>
+                <p>We design scalable, maintainable data architectures that grow with your business. Our pragmatic approach ensures that your data infrastructure is not only technically sound but also aligned with your specific business objectives and use cases.</p>
+            </div>
+            <div id="modal-devops" class="modal-details">
+                <h2>DevOps</h2>
+                <p>Our DevOps services bridge the gap between development and operations, creating streamlined workflows that accelerate delivery while maintaining high quality and reliability. We help organizations implement DevOps practices that foster collaboration, automation, and continuous improvement.</p>
+                <h3>What We Offer:</h3>
+                <ul>
+                    <li>CI/CD pipeline implementation</li>
+                    <li>Infrastructure as Code (IaC)</li>
+                    <li>Cloud migration and optimization</li>
+                    <li>Containerization and orchestration (Docker, Kubernetes)</li>
+                    <li>Monitoring and observability solutions</li>
+                    <li>Security integration (DevSecOps)</li>
+                </ul>
+                <h3>Our Approach:</h3>
+                <p>We take a holistic view of your development lifecycle, identifying bottlenecks and implementing automation that reduces manual effort and increases reliability. Our DevOps solutions are designed to create a culture of collaboration and continuous improvement within your organization.</p>
+            </div>
+            <div id="modal-ai" class="modal-details">
+                <h2>AI-Enabled Delivery</h2>
+                <p>Our AI-enabled delivery services help organizations leverage artificial intelligence and machine learning to solve complex problems, automate processes, and gain competitive advantages. We integrate AI capabilities into your existing systems or build new AI-powered solutions from the ground up.</p>
+                <h3>What We Offer:</h3>
+                <ul>
+                    <li>Machine learning model development and deployment</li>
+                    <li>Natural Language Processing (NLP) solutions</li>
+                    <li>Computer vision applications</li>
+                    <li>Predictive analytics systems</li>
+                    <li>AI-powered automation</li>
+                    <li>Intelligent recommendation engines</li>
+                </ul>
+                <h3>Our Approach:</h3>
+                <p>We focus on practical AI applications that deliver tangible business value. Our team combines deep technical expertise with domain knowledge to create AI solutions that are not just technically sophisticated but also aligned with your specific business objectives and constraints.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- PRACTICES SECTION -->
+    <section id="practices" class="practices">
+        <div class="container">
+            <div class="section-header animate-scale-in">
+                <h2>Our Practices</h2>
+                <p>Methodologies that ensure efficient and effective delivery</p>
+            </div>
+            <div class="practices-grid">
+                <div class="practice-card">
+                    <h3>Extreme Programming</h3>
+                    <p>Embracing agile development with pair programming, test-driven development, and continuous integration for high-quality code.</p>
+                </div>
+                <div class="practice-card">
+                    <h3>Pragmatic Approach</h3>
+                    <p>Balancing theoretical best practices with practical solutions that address real-world constraints and business needs.</p>
+                </div>
+                <div class="practice-card">
+                    <h3>Principles First</h3>
+                    <p>Guided by solid engineering principles that ensure scalable, maintainable, and robust software solutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section Anchor -->
+    <section id="services" class="services-anchor">
+        <!-- This is just an anchor point for navigation -->
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about-story">
+        <div class="container">
+            <div class="section-header animate-scale-in">
+                <h2>About KodeYoga</h2>
+                <p>Our story, values, and approach to software consultancy</p>
+            </div>
+            
+            <!-- About Story Card -->
+            <div class="about-story-card animate-fade-in">
+                <div class="about-card-icon">
+                    <i class="fas fa-book-open"></i>
+                </div>
+                <h2>Our Story</h2>
+                <div class="about-card-content">
+                    <p>KodeYoga is a concept that came into being by like minded individuals with diverse backgrounds with one objective in mind – build and deliver high quality products and services.</p>
+                    <p>Founded in 2019 and headquartered in Pune, India, KodeYoga is a forward-thinking software development and consulting company committed to helping organizations navigate the digital era. We blend strategic insight, cutting-edge technology, and deep industry expertise to deliver scalable, secure, and future-ready solutions.</p>
+                    <p>At KodeYoga, we believe that technology is not just a tool—it is a catalyst for business growth. Our team of skilled engineers, strategists, and designers work collaboratively with clients to transform ideas into impactful digital products.</p>
+                    <h4>Our Vision</h4>
+                    <p>To be the leading innovator in digital transformation solutions, empowering businesses to thrive in the intelligent, connected, and digital-first world.</p>
+                    <h4>Our Mission</h4>
+                    <p>To deliver exceptional, tailored software consulting and development services that drive measurable business growth, operational efficiency, and technological advancement for our clients.</p>
+                </div>
+            </div>
+            
+            <!-- Why Choose Us Section -->
+            <div class="why-choose-us animate-scale-in animate-delay-3">
+                <h2>Why Choose KodeYoga</h2>
+                <div class="choose-us-grid">
+                    <div class="choose-us-item">
+                        <div class="choose-icon">
+                            <i class="fas fa-user-check"></i>
+                        </div>
+                        <div class="choose-content">
+                            <h4>Client-Centric Approach</h4>
+                            <p>We prioritize your business goals and align technology accordingly.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="choose-us-item">
+                        <div class="choose-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="choose-content">
+                            <h4>Proven Expertise</h4>
+                            <p>Experienced professionals across modern technology stacks.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="choose-us-item">
+                        <div class="choose-icon">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </div>
+                        <div class="choose-content">
+                            <h4>Scalable Solutions</h4>
+                            <p>Systems designed for long-term growth and performance.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="choose-us-item">
+                        <div class="choose-icon">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <div class="choose-content">
+                            <h4>Agile Delivery</h4>
+                            <p>Faster time-to-market with quality-driven development.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="choose-us-item">
+                        <div class="choose-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <div class="choose-content">
+                            <h4>End-to-End Services</h4>
+                            <p>From strategy to deployment and support.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="choose-us-item">
+                        <div class="choose-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="choose-content">
+                            <h4>Transparent Communication</h4>
+                            <p>Clear processes and regular updates.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEAM SECTION -->
+    <section id="team" class="team">
+        <div class="container">
+            <h2>Our Leadership Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="images/ravi.jpeg" alt="Aanya Sharma" class="member-image">
+                    <h3>Ravindra Shirsath</h3>
+                    <p class="member-title">Founder & CEO</p>
+                    <p>CEO at KodeYoga | Human Capital Strategist | 19+ Years Global TA & Tech Leadership | Building High-Performing SaaS & Product Organizations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact-info">
+        <div class="container">
+            <div class="section-header animate-scale-in">
+                <h2>Contact Us</h2>
+                <p>Get in touch to discuss how we can help with your software needs</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p>info@kodeyoga.in</p>
+                    <p>support@kodeyoga.in</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p>+91 98221 91144</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Visit Us</h3>
+                    <p>Amanora Mall</p>
+                    <p>Pune, Maharashtra 411060</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Social Media</h3>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/company/kodeyoga/posts/?feedView=all"><i class="fab fa-linkedin"></i></a>
+                        <!--<a href="#"><i class="fab fa-twitter"></i></a>-->
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FAQ SECTION -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>What is your typical project process?</h3>
+                    <p>Our methodology bridges strategic business discovery with high-performance engineering to deliver scalable, "clean-code" solutions. By combining a structured lifecycle—from prototyping and agile development to secure deployment—with disciplined practices like CI/CD, TDD, and SOLID design, we ensure rapid and reliable delivery. This approach prioritizes maintainability and efficiency through the KISS, DRY, and YAGNI principles, resulting in a streamlined system that is optimized for long-term growth and seamless integration</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How do you handle project pricing?</h3>
+                    <p>We offer flexible pricing models including fixed-price, time and materials, and retainer arrangements. After understanding your requirements, we'll recommend the most suitable approach for your project.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What technologies do you specialize in?</h3>
+                    <p>We have expertise in a wide range of technologies including Java, Python, JavaScript (React, Angular, Node.js), cloud platforms (AWS, Azure, GCP), and various database systems. Our technology choices are driven by your specific requirements.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How do you ensure project quality?</h3>
+                    <p>We maintain quality through rigorous code reviews, automated testing, continuous integration, regular client demos, and adherence to industry best practices and coding standards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section id="cta" class="cta">
+        <div class="container">
+            <h2>Ready to Transform Your Business?</h2>
+            <p>Let's discuss how KodeYoga can help you achieve your digital goals.</p>
+            <a href="#contact" class="btn btn-primary">Contact Us Today</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="KodeYoga Logo" class="footer-logo-image">
+                    <p>Transforming digital visions into reality</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li>Application Development</li>
+                        <li>Data Engineering</li>
+                        <li>DevOps</li>
+                        <li>AI-Enabled Delivery</li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-envelope"></i> info@kodeyoga.com</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 KodeYoga. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

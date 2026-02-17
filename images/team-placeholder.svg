@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150">
+  <rect width="150" height="150" fill="#EEEEEE" />
+  <circle cx="75" cy="60" r="30" fill="#999999" />
+  <rect x="35" y="100" width="80" height="40" rx="5" fill="#999999" />
+  <text x="75" y="125" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF" text-anchor="middle">Team Member</text>
+</svg>

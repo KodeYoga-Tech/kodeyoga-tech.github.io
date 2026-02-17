@@ -1,2 +1,2 @@
 # kodeyoga-tech.github.io
-website
+Initial website
